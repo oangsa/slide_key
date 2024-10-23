@@ -42,7 +42,7 @@ int main() {
         }
     }
 
-
+    // col = x, row = y | 2x3 , 3x2 || new = 3x3
     for (int i = 0; i < first_col_size; i++) {
         for (int j = 0; j < second_row_size; j++) {
             for (int k = 0; k < second_col_size; k++) {

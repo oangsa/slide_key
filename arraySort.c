@@ -28,6 +28,8 @@ int main() {
     printf("\n\nThe Sorted Array:\n\n");
 
     for (int i = 0; i < size; i++) printf("%d ", *(Arr + i));
+
+    return 0;
 }
 
 void sortArray(int* arr, int size) {
@@ -36,6 +38,7 @@ void sortArray(int* arr, int size) {
     for (int i = 0; i <= size; i++) {
         for (int j = 0; j <= size - 1 - i; j++) {
             if (*(arr + j) > *(arr + j + 1)) {
+                // Swap value
                 temp = *(arr + j + 1);
                 *(arr + j + 1) = *(arr + j);
                 *(arr + j) = temp;

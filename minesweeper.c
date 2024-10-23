@@ -25,6 +25,7 @@ int main() {
         {'0','0','0'}
     }
     */
+
     for (int i = 0; i < size_row; i++) {
         for (int j = 0; j < size_col; j++) {
             gameTable[i][j] = '0';
@@ -49,7 +50,7 @@ int main() {
 
     for (int i = 0; i < landmineCount; i++) {
         printf("Enter pos_x (%d): ", i+1);
-        scanf(" %d", &landminePOSArr[i][0]);
+        scanf(" %d", &landminePOSArr[i][0]); // {{x1, y1}, {x2, y2}}
         printf("Enter pos_y (%d): ", i+1);
         scanf(" %d", &landminePOSArr[i][1]);
 
